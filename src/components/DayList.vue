@@ -8,6 +8,7 @@
 		>
 			<Date
 				:distinctDay="day"
+				@click="newItem"
 			/>
 			<div class="list">
 				<div
@@ -18,6 +19,7 @@
 						:item="item"
 						:key="item.id"
 						@remove="$emit('remove', item)"
+						@find="$emit('find')"
 					/>
 				</div>
 			</div>
@@ -46,6 +48,11 @@
 				required: true,
 			}
 		},
+		methods: {
+			newItem() {
+				console.log('new');
+			}
+		}
 	}
 </script>
 

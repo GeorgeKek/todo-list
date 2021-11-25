@@ -43,11 +43,12 @@
 		methods: {
 			completeItem(event) {
 				let textEl = event.target.parentNode.nextSibling;
-				console.log(event.target.checked);
 				if (event.target.checked)
 					textEl.classList.add('through')
 				else
 					textEl.classList.remove('through')
+				this.$emit('find');
+
 			},
 			showEditor(event) {
 				if (!(event.target.classList.contains('through')))
