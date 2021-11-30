@@ -52,6 +52,10 @@
 			newItem() {
 				console.log('new');
 			}
+			// dropItems() {
+			// 	const zone = document.querySelector('#zone');
+			// 	const item = document.querySelector('')
+			// }
 		}
 	}
 </script>

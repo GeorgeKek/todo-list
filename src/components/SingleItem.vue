@@ -1,6 +1,7 @@
 <template>
 	<div
 		class="item"
+		draggable="true"
 	>
 		<label
 			class="checkbox-label"
